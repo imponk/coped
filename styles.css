@@ -1,0 +1,186 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+.card {
+  border-radius: 1rem;
+  border: 1px solid #e2e8f0;
+  background: white;
+}
+.gradient-bg {
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+}
+.glass-effect {
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+}
+
+/* Dark Mode */
+body.dark {
+  background: #0f172a;
+  color: #e2e8f0;
+}
+body.dark .glass-effect {
+  background: rgba(30, 41, 59, 0.95);
+  border-color: #1e293b;
+}
+body.dark .card {
+  background: #1e293b;
+  border-color: #334155;
+}
+body.dark .bg-white { background: #1e293b; }
+body.dark .bg-slate-50 { background: #1e293b; }
+body.dark .bg-slate-100 { background: #0f172a; }
+body.dark .border-slate-200 { border-color: #475569; }
+body.dark .border-slate-100 { border-color: #334155; }
+body.dark .border-dashed { border-color: #475569; }
+body.dark .bg-slate-900 { background: #020617; }
+body.dark .bg-slate-50\/50 { background: rgba(30, 41, 59, 0.9); }
+body.dark .bg-white\/60 { background: rgba(30, 41, 59, 0.95); }
+body.dark input[type="file"] { color-scheme: dark; }
+body.dark .bg-slate-950 { background: #020617; }
+body.dark input[type="password"] { background: #0f172a; border-color: #475569; color: #f1f5f9; }
+body.dark input[type="password"]::placeholder { color: #64748b; }
+body.dark .text-slate-800 { color: #f1f5f9; }
+body.dark .text-slate-900 { color: #f8fafc; }
+body.dark .text-slate-700 { color: #e2e8f0; }
+body.dark .text-slate-600 { color: #cbd5e1; }
+body.dark .text-slate-500 { color: #94a3b8; }
+body.dark .text-slate-400 { color: #94a3b8; }
+body.dark .text-slate-300 { color: #cbd5e1; }
+body.dark .text-slate-200 { color: #e2e8f0; }
+body.dark .hover-lift:hover { transform: none; box-shadow: none; }
+body.dark .hover\:border-blue-400:hover { border-color: #60A5FA; }
+body.dark .hover\:bg-blue-50\/30:hover { background: rgba(59, 130, 246, 0.2); }
+body.dark .hover\:bg-slate-50:hover { background: #1e293b; }
+body.dark .hover\:bg-rose-50:hover { background: rgba(220, 38, 38, 0.2); }
+body.dark .line-through { color: #64748b; }
+body.dark .italic { color: #cbd5e1; }
+body.dark .text-xs.text-slate-500.italic { color: #94a3b8; }
+body.dark .text-sm.text-slate-500.font-medium { color: #94a3b8; }
+body.dark .text-sm.text-slate-600.mb-3 { color: #cbd5e1; }
+body.dark .text-sm.text-slate-600.mb-3.leading-relaxed { color: #cbd5e1; }
+body.dark .text-xs.text-slate-400 { color: #94a3b8; }
+body.dark .text-xs.font-bold.text-slate-400 { color: #a8b2c8; }
+body.dark .text-xs.font-medium.text-slate-400 { color: #94a3b8; }
+body.dark .text-xs.font-black.text-slate-400 { color: #a8b2c8; }
+body.dark .text-\[10px\].font-black.text-slate-400 { color: #94a3b8; }
+body.dark .text-\[10px\].font-bold.text-slate-400 { color: #94a3b8; }
+body.dark .text-xs.font-black.text-slate-400 { color: #a8b2c8; }
+body.dark .text-xs.font-black.uppercase.tracking-widest.text-slate-400 { color: #94a3b8; }
+body.dark .text-sm.text-slate-400 { color: #94a3b8; }
+body.dark .text-sm.text-slate-400.leading-relaxed.max-w-2xl { color: #94a3b8; }
+body.dark .text-lg.font-black.text-slate-900 { color: #f1f5f9; }
+body.dark .text-xl.font-bold.text-slate-800 { color: #f1f5f9; }
+body.dark .text-xl.font-bold.text-slate-800.leading-tight.italic { color: #f1f5f9; }
+body.dark .text-2xl.font-bold.mb-4.leading-tight.italic { color: #f1f5f9; }
+body.dark .text-sm.text-amber-800.font-medium.italic { color: #fde68a; }
+body.dark .bg-rose-50 { background: rgba(220, 38, 38, 0.15); }
+body.dark .bg-amber-50 { background: rgba(217, 119, 6, 0.15); }
+body.dark .bg-emerald-50 { background: rgba(16, 185, 129, 0.15); }
+body.dark .border-rose-100 { border-color: rgba(220, 38, 38, 0.4); }
+body.dark .border-amber-100 { border-color: rgba(217, 119, 6, 0.4); }
+body.dark .border-emerald-100 { border-color: rgba(16, 185, 129, 0.4); }
+body.dark .text-rose-700 { color: #fca5a5; }
+body.dark .text-amber-800 { color: #fde68a; }
+body.dark .text-emerald-800 { color: #6ee7b7; }
+body.dark .text-xs.text-rose-700 { color: #fca5a5; }
+body.dark .text-xs.text-amber-800 { color: #fde68a; }
+body.dark .text-xs.text-emerald-800 { color: #6ee7b7; }
+body.dark .text-sm.text-amber-800 { color: #fde68a; }
+body.dark .text-sm.text-emerald-800 { color: #6ee7b7; }
+body.dark .bg-rose-500 { background: #dc2626; }
+body.dark .bg-emerald-500 { background: #10b981; }
+body.dark .bg-amber-500 { background: #f59e0b; }
+body.dark input[type="radio"] { accent-color: #3B82F6; }
+body.dark label:hover span { color: #e2e8f0; }
+body.dark input[type="radio"]:checked + span { color: #60A5FA; }
+body.dark input:focus { border-color: #3B82F6; }
+body.dark #apiKeyModal .bg-white {
+  background: #1e293b;
+  border-color: #475569;
+}
+body.dark #apiKeyModal .bg-amber-50 {
+  background: rgba(217, 119, 6, 0.15);
+  border-color: rgba(217, 119, 6, 0.4);
+}
+body.dark #apiKeyModal .text-amber-800 { color: #fde68a; }
+body.dark #apiKeyModal label { color: #e2e8f0; }
+body.dark .text-\[10px\].font-bold.text-blue-500 { color: #93C5FD; }
+body.dark .text-\[10px\].font-black.text-blue-400 { color: #93C5FD; }
+body.dark .text-xs.text-blue-800 { color: #93C5FD; }
+body.dark .text-xs.text-blue-800.font-medium { color: #93C5FD; }
+body.dark .text-sm.text-blue-700 { color: #BFDBFE; }
+body.dark .text-sm.text-blue-700.font-medium { color: #BFDBFE; }
+body.dark .text-\[10px\].font-black.text-blue-400.uppercase.tracking-widest { color: #93C5FD; }
+body.dark .text-xs.text-blue-400 { color: #93C5FD; }
+body.dark .text-xs.text-blue-400.font-medium { color: #93C5FD; }
+body.dark .text-\[11px\].text-blue-400 { color: #93C5FD; }
+body.dark .text-\[11px\].text-blue-400.font-medium { color: #93C5FD; }
+body.dark .text-sm.text-blue-600 { color: #60A5FA; }
+body.dark .text-blue-400 { color: #93C5FD; }
+body.dark .text-blue-600 { color: #60A5FA; }
+body.dark .text-blue-500 { color: #60A5FA; }
+body.dark .text-blue-800 { color: #BFDBFE; }
+body.dark .text-blue-900 { color: #DBEAFE; }
+body.dark .bg-blue-50 { background: rgba(59, 130, 246, 0.15); }
+body.dark .bg-blue-50\/30 { background: rgba(59, 130, 246, 0.3); }
+body.dark .bg-blue-50\/50 { background: rgba(59, 130, 246, 0.5); }
+body.dark .bg-blue-50\/20 { background: rgba(59, 130, 246, 0.2); }
+body.dark .border-blue-100 { border-color: rgba(59, 130, 246, 0.4); }
+body.dark .border-blue-100\/50 { border-color: rgba(59, 130, 246, 0.5); }
+body.dark .bg-blue-600\/20 { background: rgba(59, 130, 246, 0.2); }
+body.dark .group-hover\:text-blue-600 { color: #60A5FA; }
+body.dark .text-xs.font-black.text-blue-600 { color: #60A5FA; }
+body.dark .text-sm.text-blue-700 { color: #BFDBFE; }
+body.dark .text-\[10px\].font-black.text-blue-400 { color: #93C5FD; }
+
+/* Theme Toggle Button */
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.dark .theme-toggle {
+  background: #334155;
+  border-color: #475569;
+}
+.theme-toggle .sun-icon,
+.theme-toggle .moon-icon {
+  position: absolute;
+}
+.theme-toggle .moon-icon { opacity: 1; }
+.theme-toggle .sun-icon { opacity: 0; }
+body.dark .theme-toggle .moon-icon { opacity: 0; }
+body.dark .theme-toggle .sun-icon { opacity: 1; }
+
+/* API Key Button */
+#apiKeyBtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid #e2e8f0;
+  background: #f1f5f9;
+}
+#apiKeyBtn.api-set { background: #10b981; border-color: #059669; color: white; }
+#apiKeyBtn.api-not-set { background: #ef4444; border-color: #dc2626; color: white; }
+body.dark #apiKeyBtn { background: #334155; border-color: #475569; }
+body.dark #apiKeyBtn.api-set { background: #059669; border-color: #10b981; color: white; }
+body.dark #apiKeyBtn.api-not-set { background: #dc2626; border-color: #ef4444; color: white; }
+
+#apiKeyModal .bg-white { transition: none; }
+
+.text-transparent.bg-clip-text.gradient-bg { -webkit-text-fill-color: transparent; }
+
+body.dark .text-transparent.bg-clip-text.gradient-bg { background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+body.dark .text-transparent.bg-clip-text { -webkit-text-fill-color: unset; background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
